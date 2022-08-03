@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.logo {
+    font-family: 'Dancing Script', cursive;;
+}
+.menu {
+    font-family: 'Raleway';
+}
+
+.nav{
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.socials{
+    
+    border-radius: 50%;
+}
+.figma{
+    width: auto;
+    height: 60px;
+}
+
+.contactsocial{
+    border-radius: 50%;
+}
+
+.cont:hover{
+    background-image: red;
+}
+
+.wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) } 
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
+
+.navbar-custom {
+    z-index:2;
+}
+
+  .skill{
+    position:relative;
+    z-index:1;
+}
+img:hover{
+    transform: scale(1.04);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+
